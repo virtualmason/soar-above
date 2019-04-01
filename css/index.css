@@ -1,0 +1,26 @@
+header {
+  height: 65vh;
+  background-color: gray;
+}
+
+.content {
+  background-color: teal;
+  text-align: center;
+  height: 45vh;
+}
+
+.spacer {
+  background-color: tan;
+  height: 15vh;
+}
+
+article {
+  margin: 0 25vw;
+  padding: 2%;
+}
+
+footer {
+  text-align: center;
+  height: 25vh;
+  background-color: gainsboro;
+}

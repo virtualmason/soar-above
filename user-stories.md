@@ -8,7 +8,8 @@ As a user, I want to have one location to learn about some of the birds in my ar
 ## MVP ##
 
 As a user, I want a home page that acts as a jumping point to other pages, and displays basic information about the site in order to easily navigate the page.
- 1.The hero page is divided into two parts.
+
+The hero page is divided into two parts.
 ..*Top of page is a picture of a bird. With a logo.
 ..* Bottom is the tagline. 3. We will have a navbar in top middle of page.
 2 Under the hero are 3 sections that will link else where.
@@ -16,6 +17,8 @@ As a user, I want a home page that acts as a jumping point to other pages, and d
 ..* Under 'About Page Info' will be a section and link to about us page.
 ..* A Section and link to quiz.
 ..* Last on home page is footer.
+ 
+
 
 
 

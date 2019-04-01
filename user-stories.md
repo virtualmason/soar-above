@@ -13,7 +13,7 @@ As a user, I want a nav bar in order to help me navigate the site.
 
   - Must be positioned at top of window
   
-  - Must have logo, followed by name of site on left side
+  - Must have logo on the left side
   
   - Must have links to other pages on the right side
 
@@ -65,14 +65,23 @@ As a user, I want an interactive quiz, in order to assess my knowledge about bir
 
 ## User ##
 
-
-
 As a user, I want a dedicated page that displays all of the information about each bird, in order to learn more about them.
 
-As a user, I want each section on the information page to dynamically display information, in order to increase the flow of the page.
+  - Must have images of all birds from the quiz
+  
+  - Must have dynamic information (summary) displayed when user hovers over it
+  
+  - Must include a sound player with the appropriate sound for each bird
+  
+  - Must have a sidebar with filtering capabilities for the birds displayed on the page
+  
 
 ## Developer ##
 
 As a developer, I want a random question or bird sound to appear each time on the quiz, in order to give the user a unique experience each time.
 
-As a developer, I want a visually appealing site in order to make the user experience better and showcase my abilities as a designer.
+  - Order of appearance must be completely random, and function the same as before
+
+As a developer, I want a visually appealing site in order to make the user experience better and showcase my abilities as a designer. 
+
+  - Each page must follow the style guide 

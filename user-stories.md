@@ -9,19 +9,25 @@ As a user, I want to have one location to learn about some of the birds in my ar
 
 As a user, I want a home page that acts as a jumping point to other pages, and displays basic information about the site in order to easily navigate the page.
 
-The hero page is divided into two parts.
-..*Top of page is a picture of a bird. With a logo.
-..* Bottom is the tagline. 3. We will have a navbar in top middle of page.
-2 Under the hero are 3 sections that will link else where.
-..* About what the page is about info
-..* Under 'About Page Info' will be a section and link to about us page.
-..* A Section and link to quiz.
-..* Last on home page is footer.
+  1. The hero page is divided into two parts.
+  
+  ..*Top of page is a picture of a bird. With a logo.
+  
+  ..* Bottom is the tagline. 
+  
+  3. We will have a navbar in top middle of page.
+  
+  2. Under the hero are 3 sections that will link else where.
+  
+  ..* About what the page is about info
+  
+  ..* Under 'About Page Info' will be a section and link to about us page.
+  
+  ..* A Section and link to quiz.
+  
+  ..* Last on home page is footer.
  
-
-
-
-
+ 
 As a user, I want an about us page in order to learn more about the developers.
 
 As a user, I want an interactive quiz that allows me to click on one of four options for multiple questons, in order to assess my knowledge about birds.

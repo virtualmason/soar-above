@@ -19,7 +19,7 @@ As a user, I want a home page that acts as a jumping point to other pages, and d
   
   2. Under the hero are 3 sections that will link else where.
   
-  ..* About what the page is about info
+  --* About what the page is about info
   
   ..* Under 'About Page Info' will be a section and link to about us page.
   

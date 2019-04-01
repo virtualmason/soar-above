@@ -16,10 +16,10 @@ As a user, I want a nav bar in order to help me navigate the site.
 
 As a user, I want a dedicated page that displays all of the information about each bird, in order to learn more about them.
 
+As a user, I want each section on the information page to dynamically display information, in order to increase the flow of the page.
+
 ## Developer ##
 
 As a developer, I want a random question or bird sound to appear each time on the quiz, in order to give the user a unique experience each time.
 
 As a developer, I want a visually appealing site in order to make the user experience better and showcase my abilities as a designer.
-
-As a developer, I want 

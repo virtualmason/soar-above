@@ -11,9 +11,9 @@ As a user, I want a home page that acts as a jumping point to other pages, and d
 
   - The hero page is divided into two parts.
   
-  1. Top of page is a picture of a bird. With a logo.
+    1. Top of page is a picture of a bird. With a logo.
   
-  2. Bottom is the tagline. 
+    2. Bottom is the tagline. 
   
   - We will have a navbar in top middle of page.
   

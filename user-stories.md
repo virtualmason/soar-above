@@ -7,6 +7,8 @@ As a user, I want to have one location to learn about some of the birds in my ar
 
 ## MVP ##
 
+**Each page must follow design and layout from mock-up images
+
 As a user, I want a home page that acts as a jumping point to other pages, and displays basic information about the site in order to easily navigate the page.
 
   - The hero page is divided into two parts.
@@ -30,11 +32,28 @@ As a user, I want a home page that acts as a jumping point to other pages, and d
  
 As a user, I want an about us page in order to learn more about the developers.
 
-As a user, I want an interactive quiz that allows me to click on one of four options for multiple questons, in order to assess my knowledge about birds.
+  - Must have three circular images of each developer, with their names displayed and paragraphs with a short bio.
+  
+  - Must have nav bar
+  
+  - Must have subtle background image
 
-As a user, I want the quiz to display the results at the end, in order to show me how I did.
+As a user, I want an interactive quiz, in order to assess my knowledge about birds.
 
-As a developer, I want the site to have a basic layout, in order to help organize the content.
+  - Must display quiz start page for user to choose quiz
+
+  - Must be layed out according to design mock-up
+  
+  - Must have nav bar
+  
+  - Must have at least 10 questions, with each one occupying the entire screen
+  
+  - Must have 4 possible answers for each question
+  
+  - Must display results at the end of the quiz
+  
+  - Questions must turn green or red depending on whether the answer was correct
+  
 
 ## User ##
 

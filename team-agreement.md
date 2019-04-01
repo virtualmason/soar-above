@@ -1,0 +1,7 @@
+-Team Agreement
+  -The team won't be sarcastic towards each other and if sarcasm is heard another team members will remind the other team member it is not accepted.
+  -The team will stay until 5:00 PM working on project.
+  - Team members when working at home will work on Slack.
+  - One team member will review the other team members code on pull request.
+  - Team member will commit often but only push at end of completing a task.
+  - Team member will resolve conflicts among each other and any conflicts that last more than 10 minutes get refered to a tA to mediate.

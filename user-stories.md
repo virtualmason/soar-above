@@ -9,6 +9,14 @@ As a user, I want to have one location to learn about some of the birds in my ar
 
 **Each page must follow design and layout from mock-up images
 
+As a user, I want a nav bar in order to help me navigate the site.
+
+  - Must be positioned at top of window
+  
+  - Must have logo, followed by name of site on left side
+  
+  - Must have links to other pages on the right side
+
 As a user, I want a home page that acts as a jumping point to other pages, and displays basic information about the site in order to easily navigate the page.
 
   - The hero page is divided into two parts.
@@ -57,7 +65,7 @@ As a user, I want an interactive quiz, in order to assess my knowledge about bir
 
 ## User ##
 
-As a user, I want a nav bar in order to help me navigate the site.
+
 
 As a user, I want a dedicated page that displays all of the information about each bird, in order to learn more about them.
 

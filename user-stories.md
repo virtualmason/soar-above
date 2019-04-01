@@ -8,6 +8,7 @@ As a user, I want to have one location to learn about some of the birds in my ar
 ## MVP ##
 
 As a user, I want a home page that acts as a jumping point to other pages, and displays basic information about the site in order to easily navigate the page.
+  ### Acceptance Criteria ###
 
 As a user, I want an about us page in order to learn more about the developers.
 

@@ -11,10 +11,20 @@ nav img:hover {
 }
 nav ul {
   float: right;
-  margin: 10px;
+  margin: 15px 15px;
 }
 nav ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
   display: inline-block;
-  border: 1px solid black;
-  padding: 10px;
+  border: 1px solid #777;
+  padding: 12px 20px;
+  text-align: center;
+  width: 80px;
+  margin: 0 5px;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: #111;
+  border: 1px solid #333;
 }

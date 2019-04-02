@@ -1,15 +1,31 @@
 header {
-  height: 65vh;
-  background-color: white;
+  height: 85vh;
+  background-image: url('../img/owl.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-color: rgb(110, 108, 108);
 }
 .content {
-  background-color: teal;
   text-align: center;
   height: 45vh;
 }
 
+.imgOne {
+  background-image: url('../img/cardinal-smaller.jpg');
+}
+
+.imgAll {
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  background-color: rgb(172, 171, 171);
+}
+
 .spacer {
-  background-color: tan;
+  background-color: rgb(220, 208, 192);
   height: 15vh;
 }
 

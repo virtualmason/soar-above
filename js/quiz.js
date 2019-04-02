@@ -1,10 +1,5 @@
-
 'use strict';
 
-
-function wired() {
-  alert('app.js');
-}
 var correct = 0;
 var incorrect = 0;
 

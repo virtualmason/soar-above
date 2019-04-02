@@ -1,6 +1,6 @@
 header {
-  height: 85vh;
-  background-image: url('../img/owl.jpg');
+  height: 92vh;
+  background-image: url('../img/white-tailed-eagle.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -9,17 +9,27 @@ header {
 }
 .content {
   text-align: center;
-  height: 45vh;
+  height: 85vh;
 }
 
 .imgOne {
   background-image: url('../img/cardinal-smaller.jpg');
+  background-position: center;
+}
+
+.imgTwo {
+  background-image: url('../img/owl.jpg');
+  background-position: top;
+}
+
+.imgThree {
+  background-image: url('../img/bluebird.jpg');
+  background-position: center;
 }
 
 .imgAll {
   width: 100vw;
   background-size: cover;
-  background-position: center;
   background-blend-mode: screen;
   background-color: rgb(172, 171, 171);
 }
@@ -36,8 +46,8 @@ article {
 
 footer {
   text-align: center;
-  height: 25vh;
-  background-color: gainsboro;
+  height: 72vh;
+  background-image: url('../img/peregrine-falcon-adjusted.jpg');
 }
 
 h2 {

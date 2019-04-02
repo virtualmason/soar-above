@@ -44,6 +44,17 @@ main div {
   border-radius: 30px;
 }
 
-.bird:hover {
-  cursor: pointer;
+.containerOne:hover .imageOne {
+  opacity: 0.3;
+}
+
+.containerOne:hover .middleOne {
+  opacity: 1;
+}
+
+.middleOne {
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }

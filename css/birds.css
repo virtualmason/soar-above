@@ -21,6 +21,7 @@ aside {
   width: 300px;
   height: 1000px;
 }
+
 main {
   background-color: white;
   float: right;
@@ -32,15 +33,15 @@ main {
 
 main div {
   width: 300px;
-  height: 300px;
-  border-radius: 20px;
+  height: 360px;
+  border-radius: 30px;
   display: inline-block;
   margin: 20px;
 
 }
 
 .bird {
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .bird:hover {

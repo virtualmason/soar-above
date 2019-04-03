@@ -3,11 +3,21 @@
 var correct = 0;
 var incorrect = 0;
 
-var questions = [
+var selectDisplay = document.getElementById('select');
+var questionDisplay = document.getElementById('question');
+
+var textArray = [
   {text: 'Question 1', answer: 'Correct', options: ["Incorrect", "Incorrect", "Incorrect"]},
   {text: 'Question 2', answer: 'Correct', options: ["Incorrect", "Incorrect", "Incorrect"]},
   {text: 'Question 3', answer: 'Correct', options: ["Incorrect", "Incorrect", "Incorrect"]},
   {text: 'Question 4', answer: 'Correct', options: ["Incorrect", "Incorrect", "Incorrect"]}
+];
+
+var audioArray = [
+  {src: '', answer: '', options: []},
+  {src: '', answer: '', options: []},
+  {src: '', answer: '', options: []},
+  {src: '', answer: '', options: []},
 ];
 
 var results = [];
@@ -36,21 +46,22 @@ function thisResult() {
 
 }
 
-function quizSelect() {
-
-}
-
 // main function
-function startQuiz() {
-  for (var i = 0; i < questions.length; i++) {
-    // passes current queston as parameter, gets answer,
-    // passes answer as parameter for verify(), and binds to result
-    var result = verify(displayQuestion(questions[i]));
+function startQuiz(quizType) {
+  console.log(quizType);
+  
 
-  }
-  return 0;
 }
 
-quizSelect();
+function selectText() {
+  startQuiz('text');
+  
+}
 
-console.log(startQuiz());
+function selectAudio() {
+  startQuiz('audio');
+}
+
+
+document.getElementById('textQuiz').addEventListener('click', selectText);
+document.getElementById('audioQuiz').addEventListener('click', selectAudio);

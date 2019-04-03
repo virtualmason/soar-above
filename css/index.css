@@ -2,9 +2,11 @@ body {
   font-family: 'Work Sans', sans-serif;
   color: #4C4D51;
 }
+
 a{
  color: #8a5718;
 }
+
 header {
   height: 92vh;
   background-image: url('../img/white-tailed-eagle.jpg');

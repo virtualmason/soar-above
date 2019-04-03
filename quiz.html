@@ -23,14 +23,41 @@
           <li id="quiz"><a href="quiz.html">Quiz</a></li>
           <li id="about"><a href="about.html">About Us</a></li>
         </ul>
-      </nav>
 
-  <main class='quiz-wrapper'>
+        <section  class='centered'>
+          <h1 class='blue'>Coose Your Quiz : </h1>   
+         <input type="radio" id="textQuiz" name="quiz" value="text" onchange='choose(this)'>
+         <label for="textQuiz">Take Text Based Quiz</label>
+         <input type="radio" id="audioQuiz" name="quiz" value="audio" onchange='choose(this)'>
+         <label for="audioQuiz">Take Audio Quiz</label>
+       </secton>
+      </nav>
+     
+
+
+
+  <main class='quiz-wrapper hidden textQuizClass'>
     <section class='quiz-Box'>
-      <div id='questions' class='centered'>
-         
+      <div id='questions' class='centered'>    
       </div>
-      <section>
+      <section >
+         <section class='buttonWrapper'>
+            <button class='float-left button' id='buttonOne'>one</button>
+            <button class='float-left button' id='buttonTwo'>two</button>
+         </section>
+         <section class='buttonWrapper'>
+          <button class='button' id='buttonThree'>three</button>
+          <button class='button' id='buttonFour'>four</button>
+       </section>
+    </section>
+     </section>
+  </main>
+  <!-- This hides Audio Quiz -->
+  <main class='quiz-wrapper hidden audioQuizClass'>
+    <section class='quiz-Box'>
+      <div id='questions' class='centered'>    
+      </div>
+      <section >
          <section class='buttonWrapper'>
             <button class='float-left button' id='buttonOne'>one</button>
             <button class='float-left button' id='buttonTwo'>two</button>
@@ -43,5 +70,7 @@
      </section>
   </main>
   <script src='js/app.js'></script>
+  <script src='js/quizStart.js'></script>
+
 </body>
 </html>

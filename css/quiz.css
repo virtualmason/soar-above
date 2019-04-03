@@ -28,7 +28,7 @@ div {
   padding: 30px;
 }
 
-#question div:first-child {
+#question-main div:first-child {
   width: 600px;
   padding: 60px 40px;
 }
@@ -40,7 +40,7 @@ div {
   display: block;
 }
 
-#question {
+#question-main {
   display: none;
 }
 
@@ -58,6 +58,11 @@ button {
   width: 1000px;
   padding: 0;
 }
-.question div {
-  
+
+audio {
+  margin-top: 40px;
+}
+
+#continue {
+  display: none;
 }

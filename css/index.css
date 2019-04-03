@@ -1,3 +1,10 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #4C4D51;
+}
+a{
+ color: #8a5718;
+}
 header {
   height: 92vh;
   background-image: url('../img/white-tailed-eagle.jpg');
@@ -5,7 +12,7 @@ header {
   background-position: top;
   background-repeat: no-repeat;
   background-blend-mode: screen;
-  background-color: rgb(110, 108, 108);
+  /* background-color: rgb(110, 108, 108); */
 }
 .content {
   text-align: center;
@@ -31,11 +38,11 @@ header {
   width: 100vw;
   background-size: cover;
   background-blend-mode: screen;
-  background-color: rgb(172, 171, 171);
+  background-color: #8a5718;
 }
 
 .spacer {
-  background-color: rgb(220, 208, 192);
+  background-color: #8a5718;
   height: 15vh;
 }
 
@@ -53,4 +60,5 @@ footer {
 h2 {
   font-size: 25px;
   padding: 3vh 0;
+  color: #18768a;
 }

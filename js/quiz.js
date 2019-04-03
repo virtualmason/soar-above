@@ -38,6 +38,7 @@ var results = [];
 
 var currentQuestion = 0;
 var currentAnswer;
+
 // randomizes and sets text content for each question button
 function buttonRandom(question) {
   var options = question.options; // options array that for loop iterates over
@@ -80,15 +81,18 @@ function nextQuestion() {
   startQuiz(quizType, currentQuestion);
 }
 
-// checks if selected answer is correct, returns bool to startQuiz
+var selectedButton;
+
+// checks if selected answer is correct
 function verify(userAnswer, button) {
   console.log(userAnswer);
+  selectedButton = button;
   if (userAnswer === currentAnswer) {
-    button.style.backgroundColor = 'green';
+    selectedButton.style.backgroundColor = 'green';
     results.push('correct');
     continueButton.style.display = 'inline-block';
   } else {
-    button.style.backgroundColor = 'red';
+    selectedButton.style.backgroundColor = 'red';
     results.push('incorrect');
     continueButton.style.display = 'inline-block';
   }

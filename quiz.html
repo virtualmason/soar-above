@@ -4,73 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
   <title>Quiz</title>
-  <link rel="stylesheet" type="text/css" href="css/about.css">
-  <link rel="stylesheet" type="text/css" href="css/quiz.css">
-  <link rel="stylesheet" type="text/css" href="css/all.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
 <body>
-    <nav>
-      <a href="index.html"><img src="img/logo.png"></a>
-        <ul>
-          <li id="birds"><a href="birds.html">Birds</a></li>
-          <li id="quiz"><a href="quiz.html">Quiz</a></li>
-          <li id="about"><a href="about.html">About Us</a></li>
-        </ul>
+  <nav>
+    <a href="index.html"><img src="img/logo.png"></a>
+      <ul>
+        <li id="birds"><a href="birds.html">Birds</a></li>
+        <li id="quiz"><a href="quiz.html">Quiz</a></li>
+        <li id="about"><a href="about.html">About Us</a></li>
+      </ul>
+  </nav>
 
-        <section  class='centered'>
-          <h1 class='blue'>Choose Your Quiz : </h1>   
-         <input type="radio" id="textQuiz" name="quiz" value="text" onchange='choose(this)'>
-         <label for="textQuiz">Take Text Based Quiz</label>
-         <input type="radio" id="audioQuiz" name="quiz" value="audio" onchange='choose(this)'>
-         <label for="audioQuiz">Take Audio Quiz</label>
-       </secton>
-      </nav>
-     
-
-
-
-  <main class='quiz-wrapper hidden textQuizClass'>
-    <section class='quiz-Box'>
-      <div id='questions' class='centered'>    
+  <main id="select">
+      <h2>Take a quiz and test your knowledge:</h2>
+      <div id="textQuiz">
+        <h3>Text Quiz</h3>
       </div>
-      <section >
-         <section class='buttonWrapper'>
-            <button class='float-left button' id='buttonOne'>one</button>
-            <button class='float-left button' id='buttonTwo'>two</button>
-         </section>
-         <section class='buttonWrapper'>
-          <button class='button' id='buttonThree'>three</button>
-          <button class='button' id='buttonFour'>four</button>
-       </section>
-    </section>
-     </section>
-  </main>
-  <!-- This hides Audio Quiz -->
-  <main class='quiz-wrapper hidden audioQuizClass'>
-    <section class='quiz-Box'>
-      <div id='questions' class='centered'>    
+      <div id="audioQuiz">
+        <h3>Audio Quiz</h3>
       </div>
-      <section >
-         <section class='buttonWrapper'>
-            <button class='float-left button' id='buttonOne'>one</button>
-            <button class='float-left button' id='buttonTwo'>two</button>
-         </section>
-         <section class='buttonWrapper'>
-          <button class='button' id='buttonThree'>three</button>
-          <button class='button' id='buttonFour'>four</button>
-       </section>
-    </section>
-     </section>
   </main>
-  <script src='js/app.js'></script>
+
+  <main id="question">
+      <div>
+        <h3>Question</h3>
+      </div>
+      <button>A</button>
+      <button>B</button>
+      <button>C</button>
+      <button>D</button>
+  </main>
+
+
+
+
+  <script src='js/quiz.js'></script>
   <script src='js/quizStart.js'></script>
-
 </body>
 </html>

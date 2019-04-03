@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  /* background-color: white; */
 }
 
 header {
@@ -23,7 +23,7 @@ aside {
 }
 
 main {
-  background-color: white;
+  /* background-color: white; */
   float: right;
   height: 1000px;
   width: calc(100% - 301px);
@@ -38,4 +38,38 @@ main div {
   display: inline-block;
   margin: 20px;
 
+}
+
+#snow-goose {
+  position: relative;
+}
+
+#snow-goose:hover .bird {
+  opacity: .3;
+}
+
+#showgoose:hover #snow-goose-text {
+  opacity: 1;
+}
+
+.bird {
+  opacity: 1;
+  transition: .5s ease;
+  /* backface-visibility: hidden; */
+}
+
+#snow-goose-text {
+  position: absolute;
+  opacity: .5;
+  bottom: -170px;
+  right: -40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  
+
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+ 
+ 
 }

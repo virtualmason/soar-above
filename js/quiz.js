@@ -1,7 +1,25 @@
 'use strict';
 
+
 var correct = 0;
 var incorrect = 0;
+
+var textHighScore = localStorage.getItem('Text Quiz High Score');
+var audioHighScore = localStorage.getItem('Audio Quiz High Score');
+
+function displayHighScore() {
+  if (textHighScore > 0) {
+    document.getElementById('text-high-score').textContent = 'High Score: ' + textHighScore + '%';
+  }
+  else {return;}
+
+  if (audioHighScore > 0) {
+    document.getElementById('audio-high-score').textContent = 'High Score: ' + audioHighScore + '%';
+  }
+  else {return;}
+}
+
+displayHighScore();
 
 // binds to HTML 'main' elements; used for switching display
 var selectDisplay = document.getElementById('select');
@@ -87,7 +105,19 @@ function displayQuestion(question, quizType) {
   return question.answer;
 }
 
+function setHighScore() {
+  if (quizType === 'text' && (correct * 10) > textHighScore) {
+    textHighScore = (correct * 10);
+    localStorage.setItem('Text Quiz High Score', textHighScore);
+  }
+  else if (quizType === 'audio' && (correct * 10) > audioHighScore) {
+    audioHighScore = (correct * 10);
+    localStorage.setItem('Audio Quiz High Score', audioHighScore);
+  }
+}
+
 function displayStats() {
+  setHighScore();
   document.getElementById('correct').textContent = 'Correct: ' + correct;
   document.getElementById('incorrect').textContent = 'Incorrect: ' + incorrect;
   document.getElementById('percent').textContent = (correct * 10) + '%';
@@ -142,11 +172,6 @@ button3.addEventListener('click', clickHandler);
 button4.addEventListener('click', clickHandler);
 continueButton.addEventListener('click', nextQuestion);
 returnButton.addEventListener('click', reloadPage);
-
-
-
-
-
 
 
 // main function, contains question loop

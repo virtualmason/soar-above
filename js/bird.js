@@ -1,21 +1,23 @@
 'use strict';
-function filter(event){
+function filter(check){
   // console.log(event.id);
   var dataList = document.querySelectorAll('[data-bird]');
-
+ console.log(dataList);
   for(var i =0; i < dataList.length; i++) {
     // console.log(dataList[i]);
     var currentDivData = dataList[i].getAttribute('data-bird');
       
-    console.log('line 9 ', currentDivData);
+    console.log(check.id, ' id');
 
-    if(currentDivData === event.id) {
-      
-      console.log('line 14 ',dataList[i]);
-      //  document.getElementById('show').innerHTML = dataList[i];
-      // document.getElementById('show').append(dataList[i]);
-    } else {
+    if(currentDivData !== check.id) {
       dataList[i].classList.add('hide');
+
+      console.log('line 14 ',dataList[i]);
+   
+  
+    //   // dataList[i].classList.add('hide');
+    } else {
+      dataList[i].classList.remove('hide');
     }
   }
   //  console.log(dataList);

@@ -12,7 +12,6 @@ nav img {
 nav img:hover {
   cursor: pointer;
   z-index: 10;
-
 }
 nav ul {
   display: block;

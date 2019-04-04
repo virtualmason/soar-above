@@ -17,6 +17,7 @@ header {
  text-align: center;
  overflow: hidden;
 }
+
 header video {
   cursor: pointer;
   position: absolute;
@@ -87,7 +88,12 @@ header .banner-text {
   background-blend-mode: screen;
   background-color: #8a5718;
 }
+/* This is class for footer */
 
+.left{
+  float: left;
+  width: 40%;
+}
 .spacer {
   background-color: #8a5718;
   height: 1vh;
@@ -102,6 +108,14 @@ footer {
   text-align: center;
   height: 52vh;
   background-image: url('../img/peregrine-falcon-adjusted.jpg');
+}
+.footer{
+  position: relative;
+  width: 100vw;
+  height:5vh;
+  background-blend-mode: screen;
+  background-color: #8a5718;
+
 }
 
 h2 {

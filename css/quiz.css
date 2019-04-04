@@ -1,16 +1,22 @@
+body, .button-container {
+  background-color: #18768A;
+}
+
 nav {
   background: white;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-family: "Merriweather";
   font-size: 40px;
   margin-bottom: 80px;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: "Merriweather";
+  font-size: 25px;
+  line-height: 40px;
 }
 
 main {
@@ -21,11 +27,11 @@ main {
 
 div {
   background-color: white;
-  border: 1px solid #666;
   border-radius: 20px;
   width: 500px;
   margin: 30px auto 0;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 #question-main div:first-child {
@@ -41,21 +47,30 @@ div {
 }
 
 #question-main {
+  padding-top: 100px;
   display: none;
 }
 
 button {
-  font-size: 15px;
+  font-size: 20px;
   display: inline-block;
   width: 300px;
+  border: 4px solid  transparent;
   border-radius: 1000px;
   margin: 20px 20px 0 20px;
   padding: 15px 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2pt white;
 }
 
 button:hover {
   cursor: pointer;
 }
+
+button:focus {
+  outline: 0;
+}
+
 .button-container {
   border: none;
   width: 1000px;
@@ -80,5 +95,6 @@ audio {
 }
 
 h4 {
+  font-family: "Open Sans";
   margin-top: 5px;
 }

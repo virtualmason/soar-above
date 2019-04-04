@@ -53,6 +53,9 @@ button {
   padding: 15px 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
 .button-container {
   border: none;
   width: 1000px;

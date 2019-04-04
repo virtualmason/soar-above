@@ -23,13 +23,30 @@
   </header>
   <aside>
     <h2>Filter Display</h2>
+    <!-- <div class="checkbox">
+            <input type="radio" id="huey" name="drone" value="huey"
+                   checked>
+            <label for="huey">Huey</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Dewey</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Louie</label>
+          <!-- </div> -->
     <ul class="checkbox">
-        <li>Show Geese: <input type="checkbox" id="goose" onclick='filter(this)'></li>
-        <li>Show Ducks: <input type="checkbox" id="duck" onclick="filter(this)"></li>
-        <li>Show Small Birds: <input type="checkbox" id="small" onclick="filter(this)"></li>
-        <li>Other Bird Types: <input type="checkbox" id="other" onclick="filter(this)"></li>
-        <li>Show All: <input type="checkbox" id="all" onclick="filter(this)"></li>
+            <li>Show Geese: <input type="radio" id="goose" name="bird" onclick='filter(this)'></li>
+            <li>Show Ducks: <input type="radio" id="duck" name="bird" onclick="filter(this)"></li>
+            <li>Show Small Birds: <input type="radio" id="small" name="bird" onclick="filter(this)"></li>
+            <li>Other Bird Types: <input type="radio" id="other" name="bird" onclick="filter(this)"></li>
+            <li>Show All: <input type="radio" id="all" name="bird" onclick="filter(this)"></li>
     </ul>
+     
+    
   </aside>
   <main>
       <!-- <div id="show"></div> -->

@@ -41,7 +41,6 @@ aside {
 main {
   /* background-color: white; */
   float: right;
-  height: 1000px;
   width: calc(100% - 301px);
   padding-top: 50px;
   text-align: center;
@@ -53,7 +52,7 @@ main div {
   border-radius: 30px;
   display: inline-block;
   margin: 20px;
-
+  vertical-align: top;
 }
 
 .hide{

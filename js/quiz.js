@@ -6,6 +6,7 @@ var incorrect = 0;
 // binds to HTML 'main' elements; used for switching display
 var selectDisplay = document.getElementById('select');
 var questionDisplay = document.getElementById('question-main');
+var resultsDisplay = document.getElementById('results');
 
 // question buttons
 var button1 = document.getElementById('button1');
@@ -13,18 +14,19 @@ var button2 = document.getElementById('button2');
 var button3 = document.getElementById('button3');
 var button4 = document.getElementById('button4');
 var continueButton = document.getElementById('continue');
+var returnButton = document.getElementById('return');
 // array of questions for the text quiz
 var textArray = [
-  {text: 'This bird rests by clinging to vertical surfaces, as it is unable to perch like most other birds:', answer: 'Chimney Swift', options: ["Chimney Swift", "Common Nighthawk", "Virginia Rail", 'Horned Grebe']},
-  {text: 'Which of the following birds flies approximately 2,000 miles over open water each year during migration?', answer: 'Blackpoll Warbler', options: ["Blackpoll Warbler", "Virginia Rail", "Common Nighthawk", "Ruffed Grouse"]},
-  {text: 'This bird is also known in North America by it\'s nickname, "Specklebelly":', answer: 'Greater White-fronted Goose', options: ["Greater White-fronted Goose", "Black-billed Cuckoo", "Ruddy Duck", "Ovenbird"]},
-  {text: 'These nocturnal birds eat primarily insects, and are often mistaken at night for bats due to their flight patterns:', answer: 'Common Nighthawk', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
-  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]}
+  {text: 'This bird rests by clinging to vertical surfaces, as it is unable to perch like most other birds:', answer: 'Chimney Swift', options: ['Chimney Swift', 'Common Nighthawk', 'Virginia Rail', 'Horned Grebe']},
+  {text: 'Which of the following birds flies approximately 2,000 miles over open water each year during migration?', answer: 'Blackpoll Warbler', options: ['Blackpoll Warbler', 'Virginia Rail', 'Common Nighthawk', 'Ruffed Grouse']},
+  {text: 'This bird is also known in North America by it\'s nickname, "Specklebelly":', answer: 'Greater White-fronted Goose', options: ['Greater White-fronted Goose', 'Black-billed Cuckoo', 'Ruddy Duck', 'Ovenbird']},
+  {text: 'These nocturnal birds eat primarily insects, and are often mistaken at night for bats due to their flight patterns:', answer: 'Common Nighthawk', options: ['Common Nighthawk', 'Ovenbird', 'Virginia Rail', 'Black-billed Cuckoo']},
+  {text: 'Which of the following birds mainly reside in marshes, and has the highest ratio of leg muscle to flight muscle of all birds?', answer: 'Virginia Rail', options: ['Virgina Rail', 'Ruddy Duck', 'Yellow Rail', 'Blackpoll Warbler']},
+  {text: 'These birds have red eyes, and have been known to beat caterpillars against branches before eating them to remove indigestible hairs:', answer: 'Black-billed Cuckoo', options: ['Black-billed Cuckoo', 'Painted Bunting', 'Ovenbird', 'Mourning Dove']},
+  {text: 'The males of this species have very colorful feathers, and are often considered the most beautiful birds in North America:', answer: 'Painted Bunting', options: ['Painted Bunting', 'Horned Grebe', 'Blackpoll Warbler', 'Ruby-throated Hummingbird']},
+  {text: 'Which of these birds has one of the highest heart rates and metabolism of any animal?', answer: 'Ruby-throated Hummingbird', options: ['Ruby-throated Hummingbird', 'Black-billed Cuckoo', 'Yellow Rail', 'Chimney Swift']},
+  {text: 'These birds are one of the most abundant in North America. Their wings make a whistling sound on take-off and landing:', answer: 'Mourning Dove', options: ['Mourning Dove', 'Greater White-fronted Goose', 'Gadwall', 'Horned Grebe']},
+  {text: 'This bird gets it\'s name from the uniqe nest shape which it builds on the ground:', answer: 'Ovenbird', options: ['Ovenbird', 'Chimney Swift', 'Horned Grebe', 'Gadwall']}
 ];
 
 // array of questions for the audio quiz
@@ -44,9 +46,6 @@ var audioArray = [
 // stores one of the above arrays, depending on which one was selected
 var activeArray;
 var quizType;
-
-// results array, stores data from each question and will be stored locally
-var results = [];
 
 var currentQuestion = 0;
 var currentAnswer;
@@ -89,15 +88,24 @@ function displayQuestion(question, quizType) {
 }
 
 function displayStats() {
-  console.log(results);
+  document.getElementById('correct').textContent = 'Correct: ' + correct;
+  document.getElementById('incorrect').textContent = 'Incorrect: ' + incorrect;
+  document.getElementById('percent').textContent = (correct * 10) + '%';
+  resultsDisplay.style.display = 'block';
 }
 
 function nextQuestion() {
+  button1.style.backgroundColor = 'white';
+  button2.style.backgroundColor = 'white';
+  button3.style.backgroundColor = 'white';
+  button4.style.backgroundColor = 'white';
+
   currentQuestion++;
   if (currentQuestion < activeArray.length) {
     startQuiz(quizType, currentQuestion);
   }
   else {
+    questionDisplay.style.display = 'none';
     displayStats();
   }
 }
@@ -110,11 +118,11 @@ function verify(userAnswer, button) {
   selectedButton = button;
   if (userAnswer === currentAnswer) {
     selectedButton.style.backgroundColor = 'green';
-    results.push('correct');
+    correct++;
     continueButton.style.display = 'inline-block';
   } else {
     selectedButton.style.backgroundColor = 'red';
-    results.push('incorrect');
+    incorrect++;
     continueButton.style.display = 'inline-block';
   }
 }
@@ -123,13 +131,17 @@ function clickHandler(event) {
   verify(event.target.textContent, event.target);
 }
 
+function reloadPage() {
+  location.reload();
+}
+
 // button event handlers
 button1.addEventListener('click', clickHandler);
 button2.addEventListener('click', clickHandler);
 button3.addEventListener('click', clickHandler);
 button4.addEventListener('click', clickHandler);
 continueButton.addEventListener('click', nextQuestion);
-
+returnButton.addEventListener('click', reloadPage);
 
 
 

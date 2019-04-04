@@ -23,10 +23,16 @@ var textArray = [
 
 // array of questions for the audio quiz
 var audioArray = [
-  {src: '', answer: '', options: []},
-  {src: '', answer: '', options: []},
-  {src: '', answer: '', options: []},
-  {src: '', answer: '', options: []}
+  {src: 'https://www.bird-sounds.net/sounds/1310.mp3', answer: 'Snow Goose', options: ['Snow Goose', 'Virginia Rail', 'Painted Bunting', 'Gadwall']},
+  {src: 'https://www.bird-sounds.net/sounds/1012.mp3', answer: 'Common Nighthawk', options: ['Common Nighthawk', 'Yellow Rail', 'Ovenbird', 'Black-billed Cuckoo']},
+  {src: 'https://www.bird-sounds.net/sounds/925.mp3', answer: 'Blackpoll Warbler', options: ['Blackpoll Warbler', 'Horned Grebe', 'Greater White-fronted Goose', 'Ruddy Duck']},
+  {src: 'https://www.bird-sounds.net/sounds/994.mp3', answer: 'Chimney Swift', options: ['Chimney Swift', 'Ruffed Grouse', 'Snow Goose', 'Common Nighthawk']},
+  {src: 'https://www.bird-sounds.net/sounds/913.mp3', answer: 'Black-billed Cuckoo', options: ['Black-billed Cuckoo', 'Yellow Rail', 'Painted Bunting', 'Mourning Dove']},
+  {src: 'https://www.bird-sounds.net/sounds/1182.mp3', answer: 'Mourning Dove', options: ['Mourning Dove', 'Ovenbird', 'Gadwall', 'Virginia Rail']},
+  {src: 'https://www.bird-sounds.net/sounds/1060.mp3', answer: 'Gadwall', options: ['Gadwall', 'Blackpoll Warbler', 'Ruffed Grouse', 'Chimney Swift']},
+  {src: 'https://www.bird-sounds.net/sounds/1280.mp3', answer: 'Ruffed Grouse', options: ['Ruffed Grouse', 'Greater White-fronted Goose', 'Common Nighthawk', 'Gadwall']},
+  {src: 'https://www.bird-sounds.net/sounds/705.mp3', answer: 'Horned Grebe', options: ['Horned Grebe', 'Black-billed Cuckoo', 'Yellow Rail', 'Ruddy Duck']},
+  {src: 'https://www.bird-sounds.net/sounds/1277.mp3', answer: 'Ruby-throated Hummingbird', options: ['Ruby-throated Hummingbird', 'Blackpoll Warbler', 'Virginia Rail', 'Mourning Dove']}
 ];
 
 // stores one of the above arrays, depending on which one was selected

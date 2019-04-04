@@ -18,6 +18,12 @@ var textArray = [
   {text: 'This bird rests by clinging to vertical surfaces, as it is unable to perch like most other birds:', answer: 'Chimney Swift', options: ["Chimney Swift", "Common Nighthawk", "Virginia Rail", 'Horned Grebe']},
   {text: 'Which of the following birds flies approximately 2,000 miles over open water each year during migration?', answer: 'Blackpoll Warbler', options: ["Blackpoll Warbler", "Virginia Rail", "Common Nighthawk", "Ruffed Grouse"]},
   {text: 'This bird is also known in North America by it\'s nickname, "Specklebelly":', answer: 'Greater White-fronted Goose', options: ["Greater White-fronted Goose", "Black-billed Cuckoo", "Ruddy Duck", "Ovenbird"]},
+  {text: 'These nocturnal birds eat primarily insects, and are often mistaken at night for bats due to their flight patterns:', answer: 'Common Nighthawk', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
+  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
+  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
+  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
+  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
+  {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]},
   {text: 'Question 4', answer: 'Correct', options: ["Correct", "Incorrect", "Incorrect", "Incorrect"]}
 ];
 
@@ -82,9 +88,18 @@ function displayQuestion(question, quizType) {
   return question.answer;
 }
 
+function displayStats() {
+  console.log(results);
+}
+
 function nextQuestion() {
   currentQuestion++;
-  startQuiz(quizType, currentQuestion);
+  if (currentQuestion < activeArray.length) {
+    startQuiz(quizType, currentQuestion);
+  }
+  else {
+    displayStats();
+  }
 }
 
 var selectedButton;
@@ -117,18 +132,20 @@ continueButton.addEventListener('click', nextQuestion);
 
 
 
-// displays count of correct and incorrect, possibly more info in future
-function displayStats() {
-  console.log('display stats');
-}
+
+
+
+
 
 // main function, contains question loop
 function startQuiz(quizType, currentQuestion) {
-  // main question loop, directs complex processes to other functions/subroutines
 
   currentAnswer = displayQuestion(activeArray[currentQuestion], quizType);
   console.log('Question ' + (currentQuestion + 1));
 }
+
+
+
 
 // calls startQuiz with argument 'text' and changes display
 function selectText() {

@@ -8,17 +8,62 @@ a{
 }
 
 header {
-  height: 92vh;
-  background-image: url('../img/white-tailed-eagle.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-blend-mode: screen;
+  height: 15%;
+ position: relative;
+ min-height: 500px;
+ width: 100%;
+ background-size: cover !important;
+ -webkit-background-size: cover !important;
+ text-align: center;
+ overflow: hidden;
 }
+header video {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header:before {
+ content: '';
+ display: inline-block;
+ vertical-align: middle;
+ height: 100%;
+}
+
+header .banner {
+ display: inline-block;
+ vertical-align: center;
+ margin: 0 auto;
+ width: 85%;
+ padding-bottom: 30px;
+ text-align: center;
+ font-family: 'Work Sans', sans-serif;
+ font-weight: bold;
+}
+
+header .banner-text {
+  font-size: 35px;
+  position: relative;
+  top: 400px;
+  text-shadow: 2px 2px black;
+  color: white;
+  width: 100%;
+}
+
+/* End Of Video Header */
 .content {
   text-align: center;
   height: 85vh;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .imgOne {
@@ -45,7 +90,7 @@ header {
 
 .spacer {
   background-color: #8a5718;
-  height: 15vh;
+  height: 1vh;
 }
 
 article {

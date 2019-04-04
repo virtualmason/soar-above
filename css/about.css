@@ -29,6 +29,7 @@ h1 {
     justify-content: space-evenly;
   }
   .about-img{
+    object-fit: cover;
     max-width: 150px;
     max-height: 150px;
     margin-top: 11%;

@@ -69,3 +69,16 @@ audio {
 #continue {
   display: none;
 }
+
+#results {
+  display: none;
+}
+
+#results div h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-top: 5px;
+}

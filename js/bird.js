@@ -13,9 +13,9 @@ function filter(event){
       
       console.log('line 14 ',dataList[i]);
       //  document.getElementById('show').innerHTML = dataList[i];
-      document.getElementById('show').append(dataList[i]);
+      // document.getElementById('show').append(dataList[i]);
     } else {
-       dataList[i].classList.add('hide');
+      dataList[i].classList.add('hide');
     }
   }
   //  console.log(dataList);

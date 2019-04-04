@@ -22,27 +22,33 @@
     <h1>Birds</h1>
   </header>
   <aside>
-
+    <h2>Filter Display</h2>
+    <ul class="checkbox">
+        <li>Show Geese: <input type="checkbox" id="goose" onclick='filter(this)'></li>
+        <li>Show Ducks: <input type="checkbox" id="duck" onclick="filter(this)"></li>
+        <li>Show All: <input type="checkbox" id="all" onclick="filter(this)"></li>
+    </ul>
   </aside>
   <main>
-    <div id="snow-goose">
+      <div id="show"></div>
+    <div id="snow-goose" data-bird="goose">
         <img class="bird" src="img/birds/snow-goose.jpg" width="100%" height="auto">
         <audio controls src="https://www.bird-sounds.net/sounds/1310.mp3"></audio>
         <div>At winter's end, snow geese fly north to their breeding grounds on the Arctic tundra. Pairs mate for life, and produce two to six eggs each year in a shallow ground nest. Chicks can swim and eat on their own within 24 hours, but families remain together through the young's first winter. Families can be identified as groups during both the southern and northern migrations.</div>
-        <div id="snow-goose-text">
+       <!-- <div id="snow-goose-text">-->
         </div>
     </div>
-    <div id="greater-goose">
+    <div id="greater-goose" data-bird="goose">
         <img class="bird" src="img/birds/greater-white-fronted-goose.jpg" width="100%" height="auto">
         <audio controls src="https://www.bird-sounds.net/sounds/1094.mp3"></audio>
         <div>The greater white-fronted goose lives in North America, this gray goose is found mainly west of the Mississippi River. Nesting on Arctic tundra, it winters in open country in mild climates. Wintering flocks leave night roosts before sunrise to fly to feeding areas, and musical gabbling and honking can be heard from wavering lines of White-fronts passing overhead at dawn. Included in this species is a large, dark form known as the "Tule Goose," nesting in southern Alaska and wintering in central California marshes.</div>
     </div>
-    <div id="ruddy-duck">
+    <div id="ruddy-duck" data-bird="duck">
         <img class="bird" src="img/birds/ruddy-duck.jpg" width="100%" height="auto">
         <audio controls src="https://www.bird-sounds.net/sounds/1278.mp3"></audio>
         <div>The ruddy duck is an odd little diver, the main North American representative of the group of stiff-tailed ducks, with spiky tail feathers that are often cocked up in the air. Usually lethargic, and seems reluctant to fly. On takeoff it must patter across the surface of the water to become airborne, then whirs along on rapidly beating wings. On land it is almost helpless. Flocks of Ruddies wintering on lakes seldom mix freely with other ducks, although they may associate with American Coots.</div>
     </div>
-    <div id="gadwall">
+    <div id="gadwall" data-bird="duck">
         <img class="bird" src="img/birds/gadwall.jpg" width="100%" height="auto">
         <audio controls src="https://www.bird-sounds.net/sounds/1060.mp3"></audio>
         <div>Look for the gadwall on small bodies of water with plenty of aquatic vegetation; Gadwall often feed in slightly deeper water than other dabbling ducks. They associate with many other duck species, and on a quick scan you may miss the males because of their subdued brown appearance—keep an eye out for their black rear ends, white wing-patch (formed by the inner secondary feathers), and intricately patterned, not streaked or spotted, plumage.</div>
@@ -52,7 +58,7 @@
         <audio controls src="https://www.bird-sounds.net/sounds/1280.mp3"></audio>
         <div>Ruffed Grouse can digest bitter, often toxic plants that many birds can’t handle. Levels of defensive plant compounds in buds of quaking aspen, a major winter-time food source for Ruffed Grouse, reflect the cyclic rise and fall of grouse populations: they’re lowest when grouse densities are increasing, and highest when grouse densities decline.</div>
     </div>
-    <div id="horned-grebe">
+    <div id="horned-grebe" data-bird="duck">
         <img class="bird" src="img/birds/horned-grebe.jpg" width="100%" height="auto">
         <audio controls src="https://www.bird-sounds.net/sounds/705.mp3"></audio>
         <div>The horned grebe is a small diver found mostly on northern marshes in summer, coastal bays in winter. Also widespread in Eurasia, where it is called Slavonian Grebe. Similar to Eared Grebe, but much less gregarious, it seldom nests in colonies and seldom gathers in large flocks at other seasons. Like other grebes, it must patter across surface of water to become airborne; may become trapped when waters freeze quickly overnight.</div>
@@ -108,5 +114,6 @@
         <div>One of the most secretive birds in North America, almost never seen under normal conditions, although its metallic clicking calls may echo across the northern prairie marshes on summer nights. Rarely flies in the daytime except under extreme pressure. Somewhat erratic in occurrence on the breeding grounds: may be common at a given locale in wet years, scarce or absent in dry years.</div>
     </div>
   </main>
+  <script  src="js/bird.js"></script>
 </body>
 </html>

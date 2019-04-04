@@ -89,7 +89,7 @@ function buttonRandom(question) {
 
 // get object properties and display on page (return answer property of object)
 function displayQuestion(question, quizType) {
-  //console.log(question);
+  addListeners();
   continueButton.style.display = 'none';
   var thisQuestion = document.getElementById('question');
 
@@ -159,6 +159,10 @@ function verify(userAnswer, button) {
 
 function clickHandler(event) {
   verify(event.target.textContent, event.target);
+  button1.removeEventListener('click', clickHandler);
+  button2.removeEventListener('click', clickHandler);
+  button3.removeEventListener('click', clickHandler);
+  button4.removeEventListener('click', clickHandler);
 }
 
 function reloadPage() {
@@ -166,10 +170,13 @@ function reloadPage() {
 }
 
 // button event handlers
-button1.addEventListener('click', clickHandler);
-button2.addEventListener('click', clickHandler);
-button3.addEventListener('click', clickHandler);
-button4.addEventListener('click', clickHandler);
+function addListeners() {
+  button1.addEventListener('click', clickHandler);
+  button2.addEventListener('click', clickHandler);
+  button3.addEventListener('click', clickHandler);
+  button4.addEventListener('click', clickHandler);
+}
+
 continueButton.addEventListener('click', nextQuestion);
 returnButton.addEventListener('click', reloadPage);
 

@@ -21,7 +21,7 @@ var textArray = [
   {text: 'Which of the following birds flies approximately 2,000 miles over open water each year during migration?', answer: 'Blackpoll Warbler', options: ['Blackpoll Warbler', 'Virginia Rail', 'Common Nighthawk', 'Ruffed Grouse']},
   {text: 'This bird is also known in North America by it\'s nickname, "Specklebelly":', answer: 'Greater White-fronted Goose', options: ['Greater White-fronted Goose', 'Black-billed Cuckoo', 'Ruddy Duck', 'Ovenbird']},
   {text: 'These nocturnal birds eat primarily insects, and are often mistaken at night for bats due to their flight patterns:', answer: 'Common Nighthawk', options: ['Common Nighthawk', 'Ovenbird', 'Virginia Rail', 'Black-billed Cuckoo']},
-  {text: 'Which of the following birds mainly reside in marshes, and has the highest ratio of leg muscle to flight muscle of all birds?', answer: 'Virginia Rail', options: ['Virgina Rail', 'Ruddy Duck', 'Yellow Rail', 'Blackpoll Warbler']},
+  {text: 'Which of the following birds mainly reside in marshes, and has the highest ratio of leg muscle to flight muscle of all birds?', answer: 'Virginia Rail', options: ['Virginia Rail', 'Ruddy Duck', 'Yellow Rail', 'Blackpoll Warbler']},
   {text: 'These birds have red eyes, and have been known to beat caterpillars against branches before eating them to remove indigestible hairs:', answer: 'Black-billed Cuckoo', options: ['Black-billed Cuckoo', 'Painted Bunting', 'Ovenbird', 'Mourning Dove']},
   {text: 'The males of this species have very colorful feathers, and are often considered the most beautiful birds in North America:', answer: 'Painted Bunting', options: ['Painted Bunting', 'Horned Grebe', 'Blackpoll Warbler', 'Ruby-throated Hummingbird']},
   {text: 'Which of these birds has one of the highest heart rates and metabolism of any animal?', answer: 'Ruby-throated Hummingbird', options: ['Ruby-throated Hummingbird', 'Black-billed Cuckoo', 'Yellow Rail', 'Chimney Swift']},
@@ -95,10 +95,10 @@ function displayStats() {
 }
 
 function nextQuestion() {
-  button1.style.backgroundColor = 'white';
-  button2.style.backgroundColor = 'white';
-  button3.style.backgroundColor = 'white';
-  button4.style.backgroundColor = 'white';
+  button1.style.border = '4px solid transparent';
+  button2.style.border = '4px solid transparent';
+  button3.style.border = '4px solid transparent';
+  button4.style.border = '4px solid transparent';
 
   currentQuestion++;
   if (currentQuestion < activeArray.length) {
@@ -117,11 +117,11 @@ function verify(userAnswer, button) {
   console.log(userAnswer);
   selectedButton = button;
   if (userAnswer === currentAnswer) {
-    selectedButton.style.backgroundColor = 'green';
+    selectedButton.style.border = '4px solid green';
     correct++;
     continueButton.style.display = 'inline-block';
   } else {
-    selectedButton.style.backgroundColor = 'red';
+    selectedButton.style.border = '4px solid red';
     incorrect++;
     continueButton.style.display = 'inline-block';
   }

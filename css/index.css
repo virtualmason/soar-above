@@ -107,14 +107,14 @@ article {
 footer {
   text-align: center;
   height: 52vh;
-  background-image: url('../img/peregrine-falcon-adjusted.jpg');
+  padding-top: 15px;
+  background-color: white;
 }
 .footer{
   position: relative;
   width: 100vw;
   height:5vh;
   background-blend-mode: screen;
-  background-color: #8a5718;
 
 }
 

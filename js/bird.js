@@ -5,11 +5,9 @@ function filter(check){
     var currentDivData = dataList[i].getAttribute('data-bird');
     if(check.id === 'all') {
       location.reload();
-      
     }
     if(currentDivData !== check.id) {
       dataList[i].classList.add('hide');
-    //   // dataList[i].classList.add('hide');
     } else {
       dataList[i].classList.remove('hide');
     }

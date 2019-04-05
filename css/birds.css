@@ -12,7 +12,6 @@ nav {
 header {
   width: 100%;
   height: 200px;
-  border-bottom: 1px solid black;
 }
 
 .checkbox {
@@ -20,10 +19,11 @@ header {
 }
 
 h1 {
+  font-family: 'Merriweather', Times, serif;
   position: relative;
-  width: 200px;
+  width: 300px;
   top: 120px;
-  left: 150px;
+  left: 400px;
   font-size: 40px;
 }
 .vrail{
@@ -35,68 +35,57 @@ h1 {
   max-width: 70%;
 }
 h2 {
-  font-size: 35px;
+  font-family: 'Merriweather', Times, serif;
+  font-size: 30px;
+  margin: 10px;
 }
 
 aside {
-  border-right: 1px solid black;
   float: left;
-  width: 300px;
-  height: 1000px;
+  width: 299px;
+  height: 400px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: none;
+  background-color: white;
+  box-shadow: 1px 5px 10px;
 }
 
 main {
-  /* background-color: white; */
   float: right;
   width: calc(100% - 301px);
   padding-top: 50px;
   text-align: center;
 }
 
+main img {
+  border-radius: 20px;
+}
 main div {
   width: 300px;
-  /* height: 360px; */
   border-radius: 30px;
   display: inline-block;
   margin: 20px;
   vertical-align: top;
+  background-color: white;
 }
 
 .hide{
   display: none;
 }
-/*
-#snow-goose {
-  position: relative;
+
+aside ul {
+  padding: 20px;
+  text-align: left;
+}
+aside ul li {
+  margin: 3px;
+  font-size: 18px;
+  font-family: 'Open Sans';
 }
 
-#snow-goose:hover .bird {
-  opacity: .3;
+audio {
+  margin: 10px 0;
 }
-
-#showgoose:hover #snow-goose-text {
-  opacity: 1;
-}
-
-.bird {
-  height: 100%;
-  opacity: 1;
-  transition: .5s ease;
-   backface-visibility: hidden; 
-}
-
-#snow-goose-text {
-  position: absolute;
-  opacity: .5;
-  bottom: -170px;
-  right: -40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: black;
-  
-
-   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); 
- 
- 
-}*/

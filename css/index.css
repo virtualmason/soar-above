@@ -102,6 +102,7 @@ header .banner-text {
 article {
   margin: 0 25vw;
   padding: 1vh 0;
+  color: white;
 }
 
 footer {
@@ -121,5 +122,5 @@ footer {
 h2 {
   font-size: 45px;
   padding: 3vh 0;
-  color: #18768a;
+  color: white;
 }

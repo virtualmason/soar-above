@@ -26,7 +26,14 @@ h1 {
   left: 150px;
   font-size: 40px;
 }
-
+.vrail{
+  max-width: 70%;
+  max-height: 40%;
+}
+.ruddy{
+  max-height: 70%;
+  max-width: 70%;
+}
 h2 {
   font-size: 35px;
 }
